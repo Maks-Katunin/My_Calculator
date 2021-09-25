@@ -44,7 +44,7 @@
 
             <Button
                 android:id="@+id/button_clear"
-                android:onClick="onNumberClick"
+                android:onClick="clear"
                 style="@style/Button.Gray"
                 android:text="@string/discharge" />
 
@@ -62,6 +62,7 @@
 
             <Button
                 android:id="@+id/button_Division_of_numbers"
+                android:onClick="onOperationClick"
                 style="@style/Button.Orange"
                 android:text="@string/Division_of_numbers" />
 
@@ -77,23 +78,27 @@
 
             <Button
                 android:id="@+id/button_7"
+                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:text="@string/_7" />
 
             <Button
                 android:id="@+id/button_8"
+                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginHorizontal="@dimen/standard_indent"
                 android:text="@string/_8" />
 
             <Button
                 android:id="@+id/button_9"
+                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginEnd="@dimen/standard_indent"
                 android:text="@string/_9" />
 
             <Button
-                android:id="@+id/multiplication"
+                android:id="@+id/button_multiplication"
+                android:onClick="onOperationClick"
                 style="@style/Button.Orange"
                 android:text="@string/multiplication" />
 
@@ -109,23 +114,27 @@
 
             <Button
                 android:id="@+id/button_4"
+                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:text="@string/_4" />
 
             <Button
                 android:id="@+id/button_5"
+                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginHorizontal="@dimen/standard_indent"
                 android:text="@string/_5" />
 
             <Button
                 android:id="@+id/button_6"
+                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginEnd="@dimen/standard_indent"
                 android:text="@string/_6" />
 
             <Button
                 android:id="@+id/button_minus"
+                android:onClick="onOperationClick"
                 style="@style/Button.Orange"
                 android:text="@string/minus" />
 
@@ -154,6 +163,7 @@
 
             <Button
                 android:id="@+id/button_3"
+                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginEnd="@dimen/standard_indent"
                 android:text="@string/_3" />
@@ -177,6 +187,7 @@
 
             <Button
                 android:id="@+id/button_zero"
+                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_width="0dp"
                 android:layout_marginHorizontal="@dimen/standard_indent"
@@ -194,7 +205,7 @@
 
             <Button
                 android:id="@+id/button_equals"
-                android:onClick="onOperationClick"
+                android:onClick="computeCalculation"
                 style="@style/Button.Orange"
                 android:text="@string/equals" />
 
