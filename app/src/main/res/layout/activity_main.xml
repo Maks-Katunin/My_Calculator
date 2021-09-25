@@ -49,16 +49,19 @@
                 android:text="@string/discharge" />
 
             <Button
+                android:id="@+id/button_Reverse_sign"
                 style="@style/Button.Gray"
                 android:layout_marginHorizontal="@dimen/standard_indent"
                 android:text="@string/Reverse_sign" />
 
             <Button
+                android:id="@+id/button_percent"
                 style="@style/Button.Gray"
                 android:layout_marginEnd="@dimen/standard_indent"
                 android:text="@string/percent" />
 
             <Button
+                android:id="@+id/button_Division_of_numbers"
                 style="@style/Button.Orange"
                 android:text="@string/Division_of_numbers" />
 
@@ -73,20 +76,24 @@
             android:weightSum="4">
 
             <Button
+                android:id="@+id/button_7"
                 style="@style/Button.Dark_gray"
                 android:text="@string/_7" />
 
             <Button
+                android:id="@+id/button_8"
                 style="@style/Button.Dark_gray"
                 android:layout_marginHorizontal="@dimen/standard_indent"
                 android:text="@string/_8" />
 
             <Button
+                android:id="@+id/button_9"
                 style="@style/Button.Dark_gray"
                 android:layout_marginEnd="@dimen/standard_indent"
                 android:text="@string/_9" />
 
             <Button
+                android:id="@+id/multiplication"
                 style="@style/Button.Orange"
                 android:text="@string/multiplication" />
 
@@ -101,20 +108,24 @@
             android:weightSum="4">
 
             <Button
+                android:id="@+id/button_4"
                 style="@style/Button.Dark_gray"
                 android:text="@string/_4" />
 
             <Button
+                android:id="@+id/button_5"
                 style="@style/Button.Dark_gray"
                 android:layout_marginHorizontal="@dimen/standard_indent"
                 android:text="@string/_5" />
 
             <Button
+                android:id="@+id/button_6"
                 style="@style/Button.Dark_gray"
                 android:layout_marginEnd="@dimen/standard_indent"
                 android:text="@string/_6" />
 
             <Button
+                android:id="@+id/button_minus"
                 style="@style/Button.Orange"
                 android:text="@string/minus" />
 

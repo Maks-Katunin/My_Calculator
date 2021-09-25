@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 String two = tvResult.getText().toString().replace(firstValue + operation, "");
                 secondValue = Integer.parseInt(two);
                 String result = String.valueOf(firstValue + secondValue);
-                tvResult.setText(firstValue + operation + " = " + result);
+                tvResult.setText(firstValue + operation + two + "=" + result);
                 break;
         }
     }
