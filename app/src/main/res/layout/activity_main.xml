@@ -44,8 +44,8 @@
 
             <Button
                 android:id="@+id/button_clear"
-                android:onClick="clear"
                 style="@style/Button.Gray"
+                android:onClick="clear"
                 android:text="@string/discharge" />
 
             <Button
@@ -62,8 +62,8 @@
 
             <Button
                 android:id="@+id/button_Division_of_numbers"
-                android:onClick="onOperationClick"
                 style="@style/Button.Orange"
+                android:onClick="onOperationClick"
                 android:text="@string/Division_of_numbers" />
 
 
@@ -78,28 +78,28 @@
 
             <Button
                 android:id="@+id/button_7"
-                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
+                android:onClick="onNumberClick"
                 android:text="@string/_7" />
 
             <Button
                 android:id="@+id/button_8"
-                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginHorizontal="@dimen/standard_indent"
+                android:onClick="onNumberClick"
                 android:text="@string/_8" />
 
             <Button
                 android:id="@+id/button_9"
-                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginEnd="@dimen/standard_indent"
+                android:onClick="onNumberClick"
                 android:text="@string/_9" />
 
             <Button
                 android:id="@+id/button_multiplication"
-                android:onClick="onOperationClick"
                 style="@style/Button.Orange"
+                android:onClick="onOperationClick"
                 android:text="@string/multiplication" />
 
 
@@ -114,28 +114,28 @@
 
             <Button
                 android:id="@+id/button_4"
-                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
+                android:onClick="onNumberClick"
                 android:text="@string/_4" />
 
             <Button
                 android:id="@+id/button_5"
-                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginHorizontal="@dimen/standard_indent"
+                android:onClick="onNumberClick"
                 android:text="@string/_5" />
 
             <Button
                 android:id="@+id/button_6"
-                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginEnd="@dimen/standard_indent"
+                android:onClick="onNumberClick"
                 android:text="@string/_6" />
 
             <Button
                 android:id="@+id/button_minus"
-                android:onClick="onOperationClick"
                 style="@style/Button.Orange"
+                android:onClick="onOperationClick"
                 android:text="@string/minus" />
 
 
@@ -149,29 +149,29 @@
             android:weightSum="4">
 
             <Button
-                android:onClick="onNumberClick"
                 android:id="@+id/button_1"
                 style="@style/Button.Dark_gray"
+                android:onClick="onNumberClick"
                 android:text="@string/_1" />
 
             <Button
-                android:onClick="onNumberClick"
                 android:id="@+id/button_2"
                 style="@style/Button.Dark_gray"
                 android:layout_marginHorizontal="@dimen/standard_indent"
+                android:onClick="onNumberClick"
                 android:text="@string/_2" />
 
             <Button
                 android:id="@+id/button_3"
-                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_marginEnd="@dimen/standard_indent"
+                android:onClick="onNumberClick"
                 android:text="@string/_3" />
 
             <Button
                 android:id="@+id/button_plus"
-                android:onClick="onOperationClick"
                 style="@style/Button.Orange"
+                android:onClick="onOperationClick"
                 android:text="@string/plus" />
 
 
@@ -187,12 +187,12 @@
 
             <Button
                 android:id="@+id/button_zero"
-                android:onClick="onNumberClick"
                 style="@style/Button.Dark_gray"
                 android:layout_width="0dp"
                 android:layout_marginHorizontal="@dimen/standard_indent"
                 android:layout_weight="2"
                 android:gravity="start|center_vertical"
+                android:onClick="onNumberClick"
                 android:paddingStart="24dp"
                 android:text="@string/zero"
                 tools:ignore="RtlSymmetry" />
@@ -205,8 +205,8 @@
 
             <Button
                 android:id="@+id/button_equals"
-                android:onClick="computeCalculation"
                 style="@style/Button.Orange"
+                android:onClick="computeCalculation"
                 android:text="@string/equals" />
 
 

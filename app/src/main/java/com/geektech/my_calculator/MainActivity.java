@@ -2,6 +2,7 @@ package com.geektech.my_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -9,11 +10,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvResult;
-    private Integer firstValue, secondValue;
+    private Integer firstValue;
     private String operation = "";
     private Boolean finish = false;
-    private String result;
-    private String secondValueString;
 
 
     @Override
@@ -24,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("NonConstantResourceId")
     public void onNumberClick(View view) {
         switch (view.getId()) {
             case R.id.button_1:
@@ -120,10 +120,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint({"NonConstantResourceId", "SetTextI18n"})
     public void onOperationClick(View view) {
         switch (view.getId()) {
             case R.id.button_plus:
-                if (!tvResult.getText().toString().contains("+")) {
+                if (!tvResult.getText().toString().contains("+")
+                        && !tvResult.getText().toString().contains("-")
+                        && !tvResult.getText().toString().contains("÷")
+                        && !tvResult.getText().toString().contains("×")
+                        && !tvResult.getText().toString().contains("=")) {
                     firstValue = Integer.parseInt(tvResult.getText().toString());
                     operation = "+";
                     tvResult.setText(firstValue + operation);
@@ -131,7 +136,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button_minus:
-                if (!tvResult.getText().toString().contains("-")) {
+                if (!tvResult.getText().toString().contains("+")
+                    && !tvResult.getText().toString().contains("-")
+                    && !tvResult.getText().toString().contains("÷")
+                    && !tvResult.getText().toString().contains("×")
+                    && !tvResult.getText().toString().contains("=")) {
                     firstValue = Integer.parseInt(tvResult.getText().toString());
                     operation = "-";
                     tvResult.setText(firstValue + operation);
@@ -139,7 +148,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button_Division_of_numbers:
-                if (!tvResult.getText().toString().contains("÷")) {
+                if (!tvResult.getText().toString().contains("+")
+                        && !tvResult.getText().toString().contains("-")
+                        && !tvResult.getText().toString().contains("÷")
+                        && !tvResult.getText().toString().contains("×")
+                        && !tvResult.getText().toString().contains("=")) {
                     firstValue = Integer.parseInt(tvResult.getText().toString());
                     operation = "÷";
                     tvResult.setText(firstValue + operation);
@@ -147,33 +160,29 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.button_multiplication:
-                if (!tvResult.getText().toString().contains("×")) {
+                if (!tvResult.getText().toString().contains("+")
+                        && !tvResult.getText().toString().contains("-")
+                        && !tvResult.getText().toString().contains("÷")
+                        && !tvResult.getText().toString().contains("×")
+                        && !tvResult.getText().toString().contains("=")) {
                     firstValue = Integer.parseInt(tvResult.getText().toString());
                     operation = "×";
                     tvResult.setText(firstValue + operation);
                 }
                 break;
 
-
-            case R.id.button_equals:
-                if (!tvResult.getText().toString().contains("=")) {
-                    String two = tvResult.getText().toString().replace(firstValue + operation, "");
-                    secondValue = Integer.parseInt(two);
-                    String result = String.valueOf(firstValue + secondValue);
-                    tvResult.setText(result);
-                }
-                break;
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void computeCalculation(View view) {
         finish = true;
 
         switch (operation) {
             case "+":
-                secondValueString = tvResult.getText().toString().replace(firstValue + operation, "");
-                secondValue = Integer.parseInt(secondValueString);
-                result = String.valueOf(firstValue + secondValue);
+                String secondValueString = tvResult.getText().toString().replace(firstValue + operation, "");
+                Integer secondValue = Integer.parseInt(secondValueString);
+                String result = String.valueOf(firstValue + secondValue);
                 tvResult.setText(firstValue + operation + secondValue + "=" + result);
                 operation = "";
                 break;
